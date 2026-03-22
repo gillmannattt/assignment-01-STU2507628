@@ -1,1 +1,38 @@
-
+[
+  {
+    "product_id": "E101",
+    "name": "iPhone 14",
+    "category": "Electronics",
+    "price": 80000,
+    "brand": "Apple",
+    "specs": {
+      "warranty_years": 1,
+      "battery": "3279mAh",
+      "storage": "128GB"
+    },
+    "features": ["5G", "Face ID", "Dual Camera"]
+  },
+  {
+    "product_id": "C201",
+    "name": "Men's Denim Jacket",
+    "category": "Clothing",
+    "price": 2500,
+    "brand": "Levis",
+    "sizes": ["S", "M", "L", "XL"],
+    "material": "Denim",
+    "colors": ["Blue", "Black"]
+  },
+  {
+    "product_id": "G301",
+    "name": "Organic Milk",
+    "category": "Groceries",
+    "price": 60,
+    "brand": "Amul",
+    "expiry_date": "2024-12-30",
+    "nutrition": {
+      "calories": 150,
+      "protein": "8g",
+      "fat": "8g"
+    }
+  }
+]
