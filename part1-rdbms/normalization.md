@@ -1,17 +1,17 @@
- Anomaly Analysis
+## Anomaly Analysis
 
-Insert Anomaly
+### Insert Anomaly
 In the orders_flat.csv dataset, we cannot insert a new product unless there is an associated order. For example, if a new product is introduced but no customer has purchased it yet, we cannot store it in the table because order-related fields (like order_id) are required. This leads to data loss of potential products.
 
-Update Anomaly
+### Update Anomaly
 Customer information such as city or name is repeated across multiple rows. For instance, if a customer like "Rohan Iyer" appears in multiple orders, updating his city would require changes in all rows. If one row is missed, it leads to inconsistent data.
 
-Delete Anomaly
+### Delete Anomaly
 If we delete a row containing the only order of a product, we also lose all information about that product. For example, deleting the only record of a product removes its existence from the database entirely.
 
 ---
 
-Normalization Justification
+## Normalization Justification
 
 Keeping all data in a single table may seem simpler, but it leads to redundancy, inconsistency, and anomalies. In the given dataset, customer details, product details, and sales representative data are repeated across multiple rows. This repetition increases storage usage and creates risks during updates.
 
